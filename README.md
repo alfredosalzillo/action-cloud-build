@@ -11,6 +11,7 @@ In your actions workflow insert this:
   uses: alfredosalzillo/action-cloud-build@master
   with:
     image: gcr.io/[your-project]/[image]
+    project: [your-project]
     service key: ${{ secrets.GCLOUD_AUTH }}
 ```
 
