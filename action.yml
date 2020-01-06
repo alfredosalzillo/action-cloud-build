@@ -8,8 +8,8 @@ inputs:
   image:
     description: 'Name of the docker image to build'
     required: true
-  service:
-    description: 'Name of the service in Cloud Run'
+  project:
+    description: 'GCP project'
     required: true
   service_key:
     description: 'GCP service key with storage and run permissions'
