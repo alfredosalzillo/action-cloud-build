@@ -1,0 +1,16 @@
+name: 'Cloud Build'
+description: 'Authenticate with gcloud, build image on Google Cloud Build'
+author: 'Alfredo Salzillo <alfredosalzillo93@gmail.com>'
+branding:
+  icon: 'arrow-up-circle'
+  color: 'green'
+inputs:
+  image:
+    description: 'Name of the docker image to build'
+    required: true
+  service_key:
+    description: 'GCP service key with storage and run permissions'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
